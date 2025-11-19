@@ -1,0 +1,1423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlexFit Studio - Modern Fitness Experience</title>
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <!-- Glightbox CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.1/css/glightbox.css"
+    />
+    <!-- Animate CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="assets/css/site.css" />
+
+    <!--Favicon-->
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://assets.aktools.net/image-stocks/logos/favicon/bootstrap.png"
+      sizes="96x96"
+    />
+  </head>
+  <body
+    class="d-flex flex-column min-vh-100"
+    data-bs-spy="scroll"
+    data-bs-target="#navbar"
+  >
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="preloader-logo">FlexFit</div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">FlexFit</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#programs">Programs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#classes">Classes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#schedule">Schedule</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blog">Blog</a>
+            </li>
+            <li class="nav-item d-none d-md-block">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <div class="ms-lg-4">
+            <a href="#contact" class="btn btn-primary">Join Now</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="main">
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 hero-content animate-on-scroll">
+              <h1 class="hero-title">
+                Transform Your <span class="gradient-text">Body</span>,
+                Transform Your <span class="gradient-text">Life</span>
+              </h1>
+              <p class="hero-subtitle">
+                Join FlexFit Studio and experience the ultimate fitness journey
+                with our expert trainers, state-of-the-art equipment, and
+                personalized workout plans.
+              </p>
+              <div class="hero-btns">
+                <a href="#programs" class="btn btn-primary">Choose Program</a>
+                <a href="#contact" class="btn btn-outline-primary"
+                  >Contact Us</a
+                >
+              </div>
+            </div>
+            <div class="col-lg-6 text-center animate-on-scroll">
+              <div class="hero-img">
+                <img
+                  src="https://assets.aktools.net/image-stocks/health-fitness/gym-6.jpg"
+                  alt="Fitness Studio"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section id="features" class="features">
+        <div class="container">
+          <div class="section-title animate-on-scroll">
+            <h2>Why Choose <span class="gradient-text">FlexFit</span></h2>
+            <p class="mt-3">
+              We offer everything you need for a complete fitness experience
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-md-4 animate-on-scroll mb-2">
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <i class="bi bi-heart-pulse"></i>
+                </div>
+                <h4>Expert Trainers</h4>
+                <p>
+                  Our certified trainers provide personalized guidance to help
+                  you reach your fitness goals safely and effectively.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 animate-on-scroll mb-2">
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <i class="bi bi-dash-circle-dotted"></i>
+                </div>
+                <h4>Modern Equipment</h4>
+                <p>
+                  Train with the latest fitness technology and equipment
+                  designed for optimal performance and safety.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 animate-on-scroll mb-2">
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <i class="bi bi-people"></i>
+                </div>
+                <h4>Community Support</h4>
+                <p>
+                  Join a supportive community of like-minded individuals who
+                  motivate and inspire each other.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 animate-on-scroll mb-2">
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <i class="bi bi-cup-hot"></i>
+                </div>
+                <h4>Nutrition Guidance</h4>
+                <p>
+                  Get expert advice on nutrition and meal planning to complement
+                  your fitness journey.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 animate-on-scroll mb-2">
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <i class="bi bi-clock-history"></i>
+                </div>
+                <h4>Flexible Hours</h4>
+                <p>
+                  Open from early morning to late evening, our studio fits
+                  perfectly into your busy schedule.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 animate-on-scroll mb-2">
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <i class="bi bi-award"></i>
+                </div>
+                <h4>Proven Results</h4>
+                <p>
+                  Our members consistently achieve their fitness goals and
+                  maintain long-term healthy lifestyles.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Choose Program Section -->
+      <section id="programs" class="choose-program">
+        <div class="container">
+          <div class="section-title animate-on-scroll">
+            <h2>Choose Your <span class="gradient-text">Program</span></h2>
+            <p class="mt-3">
+              Select the fitness program that matches your goals and lifestyle
+            </p>
+          </div>
+
+          <ul
+            class="nav nav-tabs justify-content-center mb-4 animate-on-scroll"
+            id="programTabs"
+            role="tablist"
+          >
+            <li class="nav-item mb-2" role="presentation">
+              <button
+                class="nav-link active"
+                id="weight-loss-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#weight-loss"
+                type="button"
+                role="tab"
+                aria-controls="weight-loss"
+                aria-selected="true"
+              >
+                Weight Loss
+              </button>
+            </li>
+            <li class="nav-item mb-2" role="presentation">
+              <button
+                class="nav-link"
+                id="muscle-building-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#muscle-building"
+                type="button"
+                role="tab"
+                aria-controls="muscle-building"
+                aria-selected="false"
+              >
+                Muscle Building
+              </button>
+            </li>
+            <li class="nav-item mb-2" role="presentation">
+              <button
+                class="nav-link"
+                id="strength-training-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#strength-training"
+                type="button"
+                role="tab"
+                aria-controls="strength-training"
+                aria-selected="false"
+              >
+                Strength Training
+              </button>
+            </li>
+            <li class="nav-item mb-2" role="presentation">
+              <button
+                class="nav-link"
+                id="flexibility-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#flexibility"
+                type="button"
+                role="tab"
+                aria-controls="flexibility"
+                aria-selected="false"
+              >
+                Flexibility
+              </button>
+            </li>
+          </ul>
+
+          <div class="tab-content animate-on-scroll" id="programTabsContent">
+            <div
+              class="tab-pane fade show active"
+              id="weight-loss"
+              role="tabpanel"
+              aria-labelledby="weight-loss-tab"
+            >
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="program-card">
+                    <div class="program-icon">
+                      <i class="bi bi-speedometer2"></i>
+                    </div>
+                    <h4>HIIT Burn</h4>
+                    <p>
+                      High-intensity interval training designed to maximize
+                      calorie burn and boost metabolism.
+                    </p>
+                    <a href="#contact" class="btn btn-outline-primary"
+                      >Join Program</a
+                    >
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="program-card">
+                    <div class="program-icon">
+                      <i class="bi bi-bicycle"></i>
+                    </div>
+                    <h4>Cardio Blast</h4>
+                    <p>
+                      Dynamic cardio workouts that keep your heart rate up for
+                      sustained fat burning.
+                    </p>
+                    <a href="#contact" class="btn btn-outline-primary"
+                      >Join Program</a
+                    >
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="program-card">
+                    <div class="program-icon">
+                      <i class="bi bi-egg-fried"></i>
+                    </div>
+                    <h4>Nutrition Plan</h4>
+                    <p>
+                      Customized meal plans and nutrition coaching to complement
+                      your weight loss journey.
+                    </p>
+                    <a href="#contact" class="btn btn-outline-primary"
+                      >Join Program</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="muscle-building"
+              role="tabpanel"
+              aria-labelledby="muscle-building-tab"
+            >
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="program-card">
+                    <div class="program-icon">
+                      <i class="bi bi-dumbbell"></i>
+                    </div>
+                    <h4>Power Lifting</h4>
+                    <p>
+                      Structured strength program focused on compound movements
+                      to build muscle mass.
+                    </p>
+                    <a href="#contact" class="btn btn-outline-primary"
+                      >Join Program</a
+                    >
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="program-card">
+                    <div class="program-icon">
+                      <i class="bi bi-arrow-repeat"></i>
+                    </div>
+                    <h4>Hypertrophy</h4>
+                    <p>
+                      Volume-based training with progressive overload to
+                      maximize muscle growth.
+                    </p>
+                    <a href="#contact" class="btn btn-outline-primary"
+                      >Join Program</a
+                    >
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="program-card">
+                    <div class="program-icon">
+                      <i class="bi bi-graph-up"></i>
+                    </div>
+                    <h4>Progressive Plan</h4>
+                    <p>
+                      Periodized training program that adapts as you get
+                      stronger to ensure continuous gains.
+                    </p>
+                    <a href="#contact" class="btn btn-outline-primary"
+                      >Join Program</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="strength-training"
+              role="tabpanel"
+              aria-labelledby="strength-training-tab"
+            >
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="program-card">
+                    <div class="program-icon">
+                      <i class="bi bi-shield"></i>
+                    </div>
+                    <h4>Functional Strength</h4>
+                    <p>
+                      Train movements that improve your daily life activities
+                      and overall functional capacity.
+                    </p>
+                    <a href="#contact" class="btn btn-outline-primary"
+                      >Join Program</a
+                    >
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="program-card">
+                    <div class="program-icon">
+                      <i class="bi bi-lightning"></i>
+                    </div>
+                    <h4>Explosive Power</h4>
+                    <p>
+                      Olympic lifting and plyometric training to develop
+                      explosive power and athleticism.
+                    </p>
+                    <a href="#contact" class="btn btn-outline-primary"
+                      >Join Program</a
+                    >
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="program-card">
+                    <div class="program-icon">
+                      <i class="bi bi-person-standing"></i>
+                    </div>
+                    <h4>Core Stability</h4>
+                    <p>
+                      Specialized training to strengthen your core and improve
+                      posture and balance.
+                    </p>
+                    <a href="#contact" class="btn btn-outline-primary"
+                      >Join Program</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="flexibility"
+              role="tabpanel"
+              aria-labelledby="flexibility-tab"
+            >
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="program-card">
+                    <div class="program-icon">
+                      <i class="bi bi-person-yoga"></i>
+                    </div>
+                    <h4>Yoga Flow</h4>
+                    <p>
+                      Gentle to vigorous yoga sequences that improve
+                      flexibility, balance, and mindfulness.
+                    </p>
+                    <a href="#contact" class="btn btn-outline-primary"
+                      >Join Program</a
+                    >
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="program-card">
+                    <div class="program-icon">
+                      <i class="bi bi-flower1"></i>
+                    </div>
+                    <h4>Pilates</h4>
+                    <p>
+                      Controlled movements that strengthen your core and improve
+                      overall flexibility.
+                    </p>
+                    <a href="#contact" class="btn btn-outline-primary"
+                      >Join Program</a
+                    >
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="program-card">
+                    <div class="program-icon">
+                      <i class="bi bi-heart-pulse"></i>
+                    </div>
+                    <h4>Mobility Work</h4>
+                    <p>
+                      Targeted exercises and stretches to improve joint mobility
+                      and prevent injuries.
+                    </p>
+                    <a href="#contact" class="btn btn-outline-primary"
+                      >Join Program</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Classes Section -->
+      <section id="classes" class="classes">
+        <div class="container">
+          <div class="section-title animate-on-scroll">
+            <h2>Our <span class="gradient-text">Classes</span></h2>
+            <p class="mt-3">
+              Choose from a variety of classes designed for all fitness levels
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-md-4 animate-on-scroll mb-2">
+              <div class="class-card">
+                <div class="class-img">
+                  <img
+                    src="https://assets.aktools.net/image-stocks/health-fitness/gym-10.jpg"
+                    alt="HIIT Training"
+                  />
+                </div>
+                <div class="class-content">
+                  <h4>HIIT Training</h4>
+                  <p>
+                    High-intensity interval training to burn fat and build
+                    endurance.
+                  </p>
+                  <div class="class-meta">
+                    <span><i class="bi bi-clock"></i> 45 min</span>
+                    <span><i class="bi bi-people"></i> All levels</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 animate-on-scroll mb-2">
+              <div class="class-card">
+                <div class="class-img">
+                  <img
+                    src="https://assets.aktools.net/image-stocks/health-fitness/gym-8.jpg"
+                    alt="Yoga Flow"
+                  />
+                </div>
+                <div class="class-content">
+                  <h4>Yoga Flow</h4>
+                  <p>
+                    Improve flexibility, balance, and mindfulness with our
+                    calming yoga sessions.
+                  </p>
+                  <div class="class-meta">
+                    <span><i class="bi bi-clock"></i> 60 min</span>
+                    <span><i class="bi bi-people"></i> Beginner+</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 animate-on-scroll mb-2">
+              <div class="class-card">
+                <div class="class-img">
+                  <img
+                    src="https://assets.aktools.net/image-stocks/health-fitness/gym-2.jpg"
+                    alt="Strength Training"
+                  />
+                </div>
+                <div class="class-content">
+                  <h4>Strength Training</h4>
+                  <p>
+                    Build muscle and increase strength with our targeted weight
+                    training programs.
+                  </p>
+                  <div class="class-meta">
+                    <span><i class="bi bi-clock"></i> 50 min</span>
+                    <span><i class="bi bi-people"></i> Intermediate</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 animate-on-scroll mb-2">
+              <div class="class-card">
+                <div class="class-img">
+                  <img
+                    src="https://assets.aktools.net/image-stocks/health-fitness/gym-7.jpg"
+                    alt="Pilates"
+                  />
+                </div>
+                <div class="class-content">
+                  <h4>Pilates</h4>
+                  <p>
+                    Core strengthening and body conditioning for improved
+                    posture and flexibility.
+                  </p>
+                  <div class="class-meta">
+                    <span><i class="bi bi-clock"></i> 55 min</span>
+                    <span><i class="bi bi-people"></i> All levels</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 animate-on-scroll mb-2">
+              <div class="class-card">
+                <div class="class-img">
+                  <img
+                    src="https://assets.aktools.net/image-stocks/health-fitness/gym-6.jpg"
+                    alt="Spin Class"
+                  />
+                </div>
+                <div class="class-content">
+                  <h4>Spin Class</h4>
+                  <p>
+                    High-energy cycling workout set to motivating music for
+                    maximum calorie burn.
+                  </p>
+                  <div class="class-meta">
+                    <span><i class="bi bi-clock"></i> 45 min</span>
+                    <span><i class="bi bi-people"></i> All levels</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 animate-on-scroll mb-2">
+              <div class="class-card">
+                <div class="class-img">
+                  <img
+                    src="https://assets.aktools.net/image-stocks/health-fitness/gym-9.jpg"
+                    alt="Boxing Fitness"
+                  />
+                </div>
+                <div class="class-content">
+                  <h4>Boxing Fitness</h4>
+                  <p>
+                    Learn boxing techniques while getting a full-body cardio and
+                    strength workout.
+                  </p>
+                  <div class="class-meta">
+                    <span><i class="bi bi-clock"></i> 60 min</span>
+                    <span><i class="bi bi-people"></i> Beginner+</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Schedule Section -->
+      <section id="schedule" class="schedule">
+        <div class="container">
+          <div class="section-title animate-on-scroll">
+            <h2>Class <span class="gradient-text">Schedule</span></h2>
+            <p class="mt-3">
+              Plan your week with our comprehensive class timetable
+            </p>
+          </div>
+
+          <div class="schedule-table animate-on-scroll">
+            <div class="row g-0">
+              <!-- Header Row -->
+              <div class="col-2">
+                <div class="schedule-header">Time</div>
+              </div>
+              <div class="col-2">
+                <div class="schedule-header">Monday</div>
+              </div>
+              <div class="col-2">
+                <div class="schedule-header">Tuesday</div>
+              </div>
+              <div class="col-2">
+                <div class="schedule-header">Wednesday</div>
+              </div>
+              <div class="col-2">
+                <div class="schedule-header">Thursday</div>
+              </div>
+              <div class="col-2">
+                <div class="schedule-header">Friday</div>
+              </div>
+
+              <!-- 6:00 AM Row -->
+              <div class="col-2">
+                <div class="time-slot">6:00 AM</div>
+              </div>
+              <div class="col-2">
+                <div class="schedule-cell">
+                  <div class="class-name">Morning Yoga</div>
+                  <div class="trainer">Sarah J.</div>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="schedule-cell">
+                  <div class="class-name">HIIT Burn</div>
+                  <div class="trainer">Mike T.</div>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="schedule-cell">
+                  <div class="class-name">Morning Yoga</div>
+                  <div class="trainer">Sarah J.</div>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="schedule-cell">
+                  <div class="class-name">HIIT Burn</div>
+                  <div class="trainer">Mike T.</div>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="schedule-cell">
+                  <div class="class-name">Power Yoga</div>
+                  <div class="trainer">Alex K.</div>
+                </div>
+              </div>
+
+              <!-- 8:00 AM Row -->
+              <div class="col-2">
+                <div class="time-slot">8:00 AM</div>
+              </div>
+              <div class="col-2">
+                <div class="schedule-cell empty">-</div>
+              </div>
+              <div class="col-2">
+                <div class="schedule-cell empty">-</div>
+              </div>
+              <div class="col-2">
+                <div class="schedule-cell empty">-</div>
+              </div>
+              <div class="col-2">
+                <div class="schedule-cell empty">-</div>
+              </div>
+              <div class="col-2">
+                <div class="schedule-cell">
+                  <div class="class-name">Pilates</div>
+                  <div class="trainer">Emma R.</div>
+                </div>
+              </div>
+
+              <!-- 5:00 PM Row -->
+              <div class="col-2">
+                <div class="time-slot">5:00 PM</div>
+              </div>
+              <div class="col-2">
+                <div class="schedule-cell">
+                  <div class="class-name">Strength Training</div>
+                  <div class="trainer">John D.</div>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="schedule-cell">
+                  <div class="class-name">Spin Class</div>
+                  <div class="trainer">Lisa M.</div>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="schedule-cell">
+                  <div class="class-name">Strength Training</div>
+                  <div class="trainer">John D.</div>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="schedule-cell">
+                  <div class="class-name">Spin Class</div>
+                  <div class="trainer">Lisa M.</div>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="schedule-cell">
+                  <div class="class-name">Boxing Fitness</div>
+                  <div class="trainer">Carlos R.</div>
+                </div>
+              </div>
+
+              <!-- 6:30 PM Row -->
+              <div class="col-2">
+                <div class="time-slot">6:30 PM</div>
+              </div>
+              <div class="col-2">
+                <div class="schedule-cell">
+                  <div class="class-name">Pilates</div>
+                  <div class="trainer">Emma R.</div>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="schedule-cell">
+                  <div class="class-name">Yoga Flow</div>
+                  <div class="trainer">Sarah J.</div>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="schedule-cell">
+                  <div class="class-name">Pilates</div>
+                  <div class="trainer">Emma R.</div>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="schedule-cell">
+                  <div class="class-name">Yoga Flow</div>
+                  <div class="trainer">Sarah J.</div>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="schedule-cell empty">-</div>
+              </div>
+
+              <!-- 7:30 PM Row -->
+              <div class="col-2">
+                <div class="time-slot">7:30 PM</div>
+              </div>
+              <div class="col-2">
+                <div class="schedule-cell">
+                  <div class="class-name">Boxing Fitness</div>
+                  <div class="trainer">Carlos R.</div>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="schedule-cell">
+                  <div class="class-name">Strength Training</div>
+                  <div class="trainer">John D.</div>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="schedule-cell">
+                  <div class="class-name">Boxing Fitness</div>
+                  <div class="trainer">Carlos R.</div>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="schedule-cell">
+                  <div class="class-name">Strength Training</div>
+                  <div class="trainer">John D.</div>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="schedule-cell empty">-</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center mt-4 animate-on-scroll">
+            <small class="text-muted"
+              >* Schedule subject to change. Please check our app for real-time
+              updates.</small
+            >
+            <br />
+            <a href="#!" class="btn btn-primary mt-3">Download Schedule</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trainers Section -->
+      <section id="trainers" class="trainers">
+        <div class="container">
+          <div class="section-title animate-on-scroll">
+            <h2>Our Expert <span class="gradient-text">Trainers</span></h2>
+            <p class="mt-3">Meet our team of certified fitness professionals</p>
+          </div>
+          <div class="row">
+            <div class="col-md-4 animate-on-scroll">
+              <div class="trainer-card">
+                <div class="trainer-img">
+                  <img
+                    src="https://assets.aktools.net/image-stocks/health-fitness/gym-trainer-3.jpg"
+                    alt="Sarah Johnson"
+                  />
+                </div>
+                <div class="trainer-info">
+                  <h4>Sarah Johnson</h4>
+                  <span class="specialty">Yoga & Flexibility</span>
+                  <p>
+                    Certified yoga instructor with 8 years of experience helping
+                    clients improve flexibility and mindfulness.
+                  </p>
+                  <div class="trainer-social">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 animate-on-scroll">
+              <div class="trainer-card">
+                <div class="trainer-img">
+                  <img
+                    src="https://assets.aktools.net/image-stocks/health-fitness/gym-trainer-2.jpg"
+                    alt="Mike Torres"
+                  />
+                </div>
+                <div class="trainer-info">
+                  <h4>Mike Torres</h4>
+                  <span class="specialty">HIIT & Cardio</span>
+                  <p>
+                    Former athlete specializing in high-intensity training
+                    programs that deliver maximum results in minimum time.
+                  </p>
+                  <div class="trainer-social">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 animate-on-scroll">
+              <div class="trainer-card">
+                <div class="trainer-img">
+                  <img
+                    src="https://assets.aktools.net/image-stocks/health-fitness/gym-trainer-1.jpg"
+                    alt="John Davis"
+                  />
+                </div>
+                <div class="trainer-info">
+                  <h4>John Davis</h4>
+                  <span class="specialty">Strength Training</span>
+                  <p>
+                    Certified strength and conditioning specialist with a focus
+                    on functional movement and injury prevention.
+                  </p>
+                  <div class="trainer-social">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog Section -->
+      <section id="blog" class="blog">
+        <div class="container">
+          <div class="section-title animate-on-scroll">
+            <h2>Latest <span class="gradient-text">Blog</span> Posts</h2>
+            <p class="mt-3">
+              Fitness tips, nutrition advice, and success stories
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-md-4 animate-on-scroll">
+              <div class="blog-card">
+                <div class="blog-img">
+                  <img
+                    src="https://assets.aktools.net/image-stocks/health-fitness/gym-9.jpg"
+                    alt="Weight Loss Tips"
+                  />
+                </div>
+                <div class="blog-content">
+                  <h4>10 Proven Weight Loss Tips That Actually Work</h4>
+                  <div class="blog-meta">
+                    <i class="bi bi-calendar"></i> June 15, 2023
+                    <span class="mx-2">|</span>
+                    <i class="bi bi-person"></i> Sarah Johnson
+                  </div>
+                  <p class="blog-excerpt">
+                    Discover science-backed strategies to shed pounds and keep
+                    them off for good. These practical tips have helped hundreds
+                    of our clients achieve their weight loss goals.
+                  </p>
+                  <a href="#" class="btn btn-outline-primary">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 animate-on-scroll">
+              <div class="blog-card">
+                <div class="blog-img">
+                  <img
+                    src="https://assets.aktools.net/image-stocks/health-fitness/gym-3.jpg"
+                    alt="Nutrition Guide"
+                  />
+                </div>
+                <div class="blog-content">
+                  <h4>The Ultimate Nutrition Guide for Muscle Building</h4>
+                  <div class="blog-meta">
+                    <i class="bi bi-calendar"></i> May 28, 2023
+                    <span class="mx-2">|</span>
+                    <i class="bi bi-person"></i> John Davis
+                  </div>
+                  <p class="blog-excerpt">
+                    Learn what to eat before and after workouts, how to
+                    calculate your macros, and the best foods to support muscle
+                    growth and recovery.
+                  </p>
+                  <a href="#" class="btn btn-outline-primary">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 animate-on-scroll">
+              <div class="blog-card">
+                <div class="blog-img">
+                  <img
+                    src="https://assets.aktools.net/image-stocks/health-fitness/gym-8.jpg"
+                    alt="Flexibility"
+                  />
+                </div>
+                <div class="blog-content">
+                  <h4>Why Flexibility Training Is Essential For Everyone</h4>
+                  <div class="blog-meta">
+                    <i class="bi bi-calendar"></i> April 12, 2023
+                    <span class="mx-2">|</span>
+                    <i class="bi bi-person"></i> Emma Rodriguez
+                  </div>
+                  <p class="blog-excerpt">
+                    Flexibility isn't just for yogis. Discover how improving
+                    your range of motion can prevent injuries, reduce pain, and
+                    enhance your overall quality of life.
+                  </p>
+                  <a href="#" class="btn btn-outline-primary">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center mt-4 animate-on-scroll">
+            <a href="#" class="btn btn-primary">View All Posts</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section id="testimonials" class="testimonials">
+        <div class="container">
+          <div class="section-title animate-on-scroll">
+            <h2>What Our <span style="color: white">Members Say</span></h2>
+            <p class="mt-3" style="color: rgba(255, 255, 255, 0.8)">
+              Hear from people who transformed their lives with FlexFit
+            </p>
+          </div>
+          <div class="swiper testimonial-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="testimonial-card">
+                  <p class="testimonial-text">
+                    Joining FlexFit was the best decision I've ever made for my
+                    health. In just 3 months, I've lost 20 pounds and gained so
+                    much confidence. The trainers are amazing and really care
+                    about your progress.
+                  </p>
+                  <div class="testimonial-author">
+                    <div class="testimonial-author-img">
+                      <img
+                        src="https://assets.aktools.net/image-stocks/testimonials/testimonial-2.jpg"
+                        alt="Sarah Johnson"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div>
+                      <h5>Sarah Johnson</h5>
+                      <p>Member for 6 months</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial-card">
+                  <p class="testimonial-text">
+                    I was skeptical about starting fitness classes at 45, but
+                    FlexFit made me feel welcome and capable from day one. The
+                    yoga and strength training classes have improved my mobility
+                    and reduced my back pain significantly.
+                  </p>
+                  <div class="testimonial-author">
+                    <div class="testimonial-author-img">
+                      <img
+                        src="https://assets.aktools.net/image-stocks/testimonials/testimonial-1.jpg"
+                        alt="Michael Torres"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div>
+                      <h5>Michael Torres</h5>
+                      <p>Member for 1 year</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial-card">
+                  <p class="testimonial-text">
+                    The community at FlexFit is what keeps me coming back. I've
+                    made real friends here, and we motivate each other to push
+                    harder. The HIIT classes are challenging but so rewarding!
+                  </p>
+                  <div class="testimonial-author">
+                    <div class="testimonial-author-img">
+                      <img
+                        src="https://assets.aktools.net/image-stocks/testimonials/testimonial-4.jpg"
+                        alt="Aisha Patel"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div>
+                      <h5>Aisha Patel</h5>
+                      <p>Member for 8 months</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="cta">
+        <div class="container">
+          <div class="cta-content animate-on-scroll">
+            <h2>Ready to Start Your Fitness Journey?</h2>
+            <p>
+              Join FlexFit Studio today and get your first week FREE! Our expert
+              trainers are ready to help you achieve your goals.
+            </p>
+            <a href="#contact" class="btn btn-primary">Sign Up Now</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing Section -->
+      <section id="pricing" class="pricing">
+        <div class="container">
+          <div class="section-title animate-on-scroll">
+            <h2>Membership <span class="gradient-text">Plans</span></h2>
+            <p class="mt-3">
+              Choose the plan that works best for your fitness goals
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-md-4 animate-on-scroll">
+              <div class="pricing-card">
+                <h3>Basic</h3>
+                <div class="price">$49<span>/month</span></div>
+                <p>Perfect for beginners starting their fitness journey</p>
+                <ul class="pricing-features">
+                  <li>
+                    <i class="bi bi-check-circle"></i> Access to gym equipment
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle"></i> 2 group classes per week
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle"></i> Basic fitness assessment
+                  </li>
+                  <li><i class="bi bi-check-circle"></i> Locker room access</li>
+                  <li>
+                    <i class="bi bi-x-circle"></i> Personal training sessions
+                  </li>
+                  <li><i class="bi bi-x-circle"></i> Nutrition planning</li>
+                </ul>
+                <a href="#contact" class="btn btn-outline-primary w-100"
+                  >Get Started</a
+                >
+              </div>
+            </div>
+            <div class="col-md-4 animate-on-scroll">
+              <div class="pricing-card popular">
+                <h3>Premium</h3>
+                <div class="price">$79<span>/month</span></div>
+                <p>Our most popular plan with comprehensive features</p>
+                <ul class="pricing-features">
+                  <li>
+                    <i class="bi bi-check-circle"></i> Unlimited gym access
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle"></i> Unlimited group classes
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle"></i> Monthly fitness
+                    assessment
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle"></i> 2 personal training
+                    sessions
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle"></i> Basic nutrition guidance
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle"></i> Priority class booking
+                  </li>
+                </ul>
+                <a href="#contact" class="btn btn-primary w-100">Get Started</a>
+              </div>
+            </div>
+            <div class="col-md-4 animate-on-scroll">
+              <div class="pricing-card">
+                <h3>Elite</h3>
+                <div class="price">$129<span>/month</span></div>
+                <p>For those seeking a fully personalized experience</p>
+                <ul class="pricing-features">
+                  <li><i class="bi bi-check-circle"></i> 24/7 gym access</li>
+                  <li>
+                    <i class="bi bi-check-circle"></i> Unlimited classes &
+                    amenities
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle"></i> Weekly fitness
+                    assessments
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle"></i> 4 personal training
+                    sessions
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle"></i> Complete nutrition
+                    planning
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle"></i> Recovery & massage
+                    services
+                  </li>
+                </ul>
+                <a href="#contact" class="btn btn-outline-primary w-100"
+                  >Get Started</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="section-title animate-on-scroll">
+            <h2>Get In <span class="gradient-text">Touch</span></h2>
+            <p class="mt-3">
+              Have questions? Reach out to us and we'll get back to you as soon
+              as possible.
+            </p>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-4 animate-on-scroll">
+              <div class="contact-info">
+                <h4>Contact Information</h4>
+                <div class="contact-info-item">
+                  <i class="bi bi-geo-alt"></i>
+                  <div class="contact-info-content">
+                    <h5>Our Location</h5>
+                    <p>123 Fitness Street, Downtown, City, State 12345</p>
+                  </div>
+                </div>
+                <div class="contact-info-item">
+                  <i class="bi bi-telephone"></i>
+                  <div class="contact-info-content">
+                    <h5>Phone Number</h5>
+                    <p>(123) 456-7890</p>
+                  </div>
+                </div>
+                <div class="contact-info-item">
+                  <i class="bi bi-envelope"></i>
+                  <div class="contact-info-content">
+                    <h5>Email Address</h5>
+                    <p>info@flexfitstudio.com</p>
+                  </div>
+                </div>
+                <div class="contact-info-item">
+                  <i class="bi bi-clock"></i>
+                  <div class="contact-info-content">
+                    <h5>Working Hours</h5>
+                    <p>
+                      Monday - Friday: 5am - 10pm<br />Saturday - Sunday: 7am -
+                      8pm
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-8 animate-on-scroll">
+              <div class="contact-form">
+                <h4>Send us a Message</h4>
+                <form id="contactForm">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Your Name"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="Your Email"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Subject"
+                  />
+                  <textarea
+                    class="form-control"
+                    placeholder="Your Message"
+                    required
+                  ></textarea>
+                  <button type="submit" class="btn btn-primary btn-submit">
+                    Send Message
+                  </button>
+                </form>
+              </div>
+
+              <div class="map-container animate-on-scroll">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2219901290355!2d-74.00369368400567!3d40.71312937933185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQyJzQ3LjIiTiA3NMKwMDAnMTMuMiJX!5e0!3m2!1sen!2sus!4v1643136500000!5m2!1sen!2sus"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="mt-auto">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <div class="footer-about">
+              <a href="#" class="footer-logo">FlexFit</a>
+              <p>
+                Transform your body and transform your life with FlexFit Studio.
+                Our expert trainers and state-of-the-art facility provide
+                everything you need for a complete fitness experience.
+              </p>
+              <div class="social-links">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+            <h5 class="footer-heading">Quick Links</h5>
+            <ul class="footer-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#programs">Programs</a></li>
+              <li><a href="#classes">Classes</a></li>
+              <li><a href="#schedule">Schedule</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-4 mb-4 mb-md-0">
+            <h5 class="footer-heading">Classes</h5>
+            <ul class="footer-links">
+              <li><a href="#">HIIT Training</a></li>
+              <li><a href="#">Yoga Flow</a></li>
+              <li><a href="#">Strength Training</a></li>
+              <li><a href="#">Pilates</a></li>
+              <li><a href="#">Spin Class</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <h5 class="footer-heading">Contact Us</h5>
+            <ul class="footer-links">
+              <li>
+                <i class="bi bi-geo-alt"></i> 123 Fitness Street, City, State
+                12345
+              </li>
+              <li><i class="bi bi-telephone"></i> (123) 456-7890</li>
+              <li><i class="bi bi-envelope"></i> info@flexfitstudio.com</li>
+              <li>
+                <i class="bi bi-clock"></i> Mon-Fri: 5am-10pm, Sat-Sun: 7am-8pm
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2023 FlexFit Studio. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <a href="#" class="scroll-top">
+      <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper.js JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Glightbox.js JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.1/js/glightbox.min.js"></script>
+    <!-- CountUp JS -->
+    <script src="https://cdn.jsdelivr.net/npm/countup.js@2.9.0/dist/countUp.min.js"></script>
+    <!--ImagesLoaded CDN-->
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <!--SweetAlert2 CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Site JS -->
+    <script src="assets/js/site.js"></script>
+  </body>
+</html>

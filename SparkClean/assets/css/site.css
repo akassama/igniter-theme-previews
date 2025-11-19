@@ -1,0 +1,953 @@
+/* ************ Root Variables ************ */
+:root {
+  --default-color: #333333;
+  --heading-color: #222222;
+  --accent-color: #0099ff;
+  --surface-color: #ffffff;
+  --contrast-color: #1a1a1a;
+  --background-color: #f4f7f6;
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --success-color: #28a745;
+  --info-color: #17a2b8;
+  --warning-color: #ffc107;
+  --danger-color: #dc3545;
+  --light-color: #f8f9fa;
+  --dark-color: #343a40;
+  --font-primary: "Poppins", sans-serif;
+  --font-secondary: "Raleway", sans-serif;
+}
+
+/* ************ Base Styles ************ */
+body {
+  font-family: var(--font-primary);
+  color: var(--default-color);
+  background-color: var(--background-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-secondary);
+  color: var(--heading-color);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+/* ************ Buttons ************ */
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+/* ************ Section Title ************ */
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  position: relative;
+  color: var(--heading-color);
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--primary-color);
+  bottom: -5px;
+  left: calc(50% - 25px);
+}
+
+.section-title p {
+  margin-bottom: 0;
+  color: var(--secondary-color);
+  font-size: 15px;
+}
+
+/* ************ Navigation Menu ************ */
+.navbar {
+  min-height: 80px;
+  padding: 0;
+  background: var(--contrast-color) !important;
+  backdrop-filter: blur(15px);
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.scrolled {
+  background: rgba(0, 0, 0, 0.95) !important;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand img {
+  height: 50px;
+  transition: all 0.3s;
+}
+
+.navbar-nav .nav-item {
+  margin: 0 5px;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+  padding: 10px 15px;
+  color: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease;
+  position: relative;
+  font-size: 15px;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: white;
+}
+
+.navbar-nav .nav-link:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--accent-color);
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover:before,
+.navbar-nav .nav-link.active:before {
+  visibility: visible;
+  width: 100%;
+}
+
+.navbar-nav .nav-link.active {
+  color: white;
+  font-weight: 600;
+}
+
+.dropdown-menu {
+  background: rgba(0, 0, 0, 0.9);
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  margin-top: 0;
+}
+
+.dropdown-item {
+  color: rgba(255, 255, 255, 0.8);
+  padding: 10px 20px;
+  border-left: 3px solid transparent;
+  transition: all 0.3s;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background: transparent;
+  color: white;
+  border-left: 3px solid var(--accent-color);
+}
+
+.navbar-toggler {
+  border: none;
+  color: white;
+  padding: 10px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* ************ Hero Section ************ */
+#hero {
+  width: 100%;
+  height: 80vh;
+  background: url("https://assets.aktools.net/image-stocks/cleaning/cleaning-1.jpg  ")
+    top center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+#hero .hero-container {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  color: var(--light-color);
+}
+
+#hero h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--light-color);
+}
+
+#hero p {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#hero .btn-get-started {
+  font-family: var(--font-secondary);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  line-height: 1;
+  margin: 0 6px;
+  color: var(--light-color);
+  animation-delay: 0.8s;
+  border: 2px solid var(--primary-color);
+}
+
+#hero .btn-get-started:hover {
+  background: var(--primary-color);
+  color: var(--light-color);
+}
+
+/* ************ About Section ************ */
+#about {
+  padding: 80px 0;
+}
+
+#about .content h3 {
+  font-weight: 600;
+  font-size: 26px;
+}
+
+#about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+#about .content ul li {
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+#about .content ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: var(--primary-color);
+}
+
+#about .content p:last-child {
+  margin-bottom: 0;
+}
+
+/* ************ Services Section ************ */
+#services {
+  padding: 80px 0;
+  background-color: var(--light-color);
+}
+
+#services .icon-box {
+  padding: 40px;
+  background: var(--surface-color);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: 0.3s;
+  border-radius: 8px;
+}
+
+#services .icon-box .icon {
+  margin: 0 auto;
+  width: 70px;
+  height: 70px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: ease-in-out 0.3s;
+}
+
+#services .icon-box .icon i {
+  color: var(--light-color);
+  font-size: 28px;
+  transition: ease-in-out 0.3s;
+}
+
+#services .icon-box h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+#services .icon-box h4 a {
+  color: var(--heading-color);
+  transition: ease-in-out 0.3s;
+}
+
+#services .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+#services .icon-box:hover {
+  transform: translateY(-10px);
+  border-color: var(--accent-color);
+}
+
+#services .icon-box:hover .icon {
+  background: var(--accent-color);
+}
+
+#services .icon-box:hover h4 a {
+  color: var(--accent-color);
+}
+
+/* ************ Pricing Section ************ */
+#pricing {
+  padding: 80px 0;
+}
+
+#pricing .box {
+  padding: 20px;
+  background: var(--surface-color);
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+#pricing .box h3 {
+  font-weight: 400;
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: var(--heading-color);
+}
+
+#pricing .box h4 {
+  font-size: 42px;
+  color: var(--primary-color);
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+#pricing .box h4 sup {
+  font-size: 28px;
+  top: -10px;
+}
+
+#pricing .box h4 span {
+  color: #bababa;
+  font-size: 18px;
+}
+
+#pricing .box ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+#pricing .box ul li {
+  padding: 10px 0 10px 30px;
+  position: relative;
+}
+
+#pricing .box ul i {
+  font-size: 20px;
+  color: #28a745;
+  position: absolute;
+  left: 0;
+  top: 9px;
+}
+
+#pricing .box ul .na {
+  color: #ccc;
+  text-decoration: line-through;
+}
+
+#pricing .box .btn-buy {
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  font-weight: 500;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+#pricing .box .btn-buy:hover {
+  background: var(--primary-color);
+  color: var(--light-color);
+}
+
+#pricing .featured {
+  border: 2px solid var(--primary-color);
+}
+
+#pricing .featured .btn-buy {
+  background: var(--primary-color);
+  color: var(--light-color);
+}
+
+#pricing .featured .btn-buy:hover {
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+/* ************ Get A Quote Section ************ */
+#quote {
+  padding: 80px 0;
+  background-color: var(--background-color);
+}
+
+#quote .php-email-form {
+  width: 100%;
+  background: var(--surface-color);
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.08);
+}
+
+#quote .php-email-form .form-group {
+  padding-bottom: 8px;
+}
+
+#quote .php-email-form input,
+#quote .php-email-form textarea,
+#quote .php-email-form select {
+  border-radius: 4px;
+  box-shadow: none;
+  font-size: 14px;
+  border: 1px solid #ced4da;
+}
+
+#quote .php-email-form input:focus,
+#quote .php-email-form textarea:focus,
+#quote .php-email-form select:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
+}
+
+#quote .php-email-form input,
+#quote .php-email-form select {
+  height: 44px;
+}
+
+#quote .php-email-form textarea {
+  padding: 10px 12px;
+}
+
+#quote .php-email-form button[type="submit"] {
+  background: var(--primary-color);
+  border: 0;
+  padding: 12px 36px;
+  color: var(--light-color);
+  transition: 0.4s;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+
+#quote .php-email-form button[type="submit"]:hover {
+  background: var(--accent-color);
+}
+
+#quote .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+#quote .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: center;
+  padding: 15px;
+}
+
+#quote .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+}
+
+/* ************ Testimonials Section ************ */
+#testimonials {
+  padding: 80px 0;
+  background-color: var(--light-color);
+}
+
+#testimonials .testimonial-item {
+  box-sizing: content-box;
+  padding: 30px;
+  margin: 30px 15px;
+  background: var(--surface-color);
+  border-radius: 8px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+#testimonials .testimonial-item .testimonial-img {
+  width: 90px;
+  border-radius: 50%;
+  border: 6px solid var(--light-color);
+  margin: -45px 0 0 0px;
+  position: absolute;
+  left: 30px;
+}
+
+#testimonials .testimonial-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 5px 120px;
+  color: var(--heading-color);
+}
+
+#testimonials .testimonial-item h4 {
+  font-size: 14px;
+  color: var(--secondary-color);
+  margin: 0 0 0 120px;
+}
+
+#testimonials .testimonial-item .quote-icon-left,
+#testimonials .testimonial-item .quote-icon-right {
+  color: #c9e3f7;
+  font-size: 26px;
+}
+
+#testimonials .testimonial-item .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+
+#testimonials .testimonial-item .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+}
+
+#testimonials .testimonial-item p {
+  font-style: italic;
+  margin: 15px 0 0 0;
+  padding: 0 20px 0 20px;
+  position: relative;
+  color: var(--default-color);
+}
+
+#testimonials .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+#testimonials .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #d1e2f3;
+  opacity: 1;
+}
+
+#testimonials .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--primary-color);
+}
+
+/* ************ CTA Section ************ */
+#cta {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://assets.aktools.net/image-stocks/cleaning/cleaning-4.jpg  ")
+      fixed center center;
+  background-size: cover;
+  padding: 80px 0;
+  color: var(--light-color);
+}
+
+#cta h3 {
+  color: var(--light-color);
+  font-size: 28px;
+  font-weight: 700;
+}
+
+#cta p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+}
+
+#cta .cta-btn {
+  font-family: var(--font-secondary);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 2px solid var(--light-color);
+  color: var(--light-color);
+}
+
+#cta .cta-btn:hover {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+/* ************ Team Section ************ */
+#team {
+  padding: 80px 0;
+  background-color: var(--background-color);
+}
+
+#team .member {
+  position: relative;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.08);
+  padding: 30px;
+  border-radius: 8px;
+  background: var(--surface-color);
+  text-align: center;
+}
+
+#team .member .pic {
+  overflow: hidden;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin: 0 auto 20px auto;
+  position: relative;
+}
+
+#team .member .pic img {
+  transition: all 0.3s ease-in-out;
+}
+
+#team .member h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 22px;
+  color: var(--heading-color);
+}
+
+#team .member span {
+  display: block;
+  font-size: 15px;
+  padding-bottom: 10px;
+  position: relative;
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+
+#team .member p {
+  margin: 10px 0 0 0;
+  font-size: 14px;
+}
+
+#team .member .social {
+  margin-top: 15px;
+}
+
+#team .member .social a {
+  background: var(--light-color);
+  width: 36px;
+  height: 36px;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 3px;
+  transition: 0.3s;
+  border: 1px solid rgba(var(--dark-color-rgb), 0.08);
+}
+
+#team .member .social a i {
+  color: var(--dark-color);
+  font-size: 16px;
+  margin: 0 2px;
+}
+
+#team .member .social a:hover {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+#team .member .social a:hover i {
+  color: var(--light-color);
+}
+
+/* ************ Contact Section ************ */
+#contact {
+  padding: 80px 0;
+  background-color: var(--light-color);
+}
+
+#contact .info-item {
+  margin-bottom: 30px;
+  background: var(--surface-color);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.08);
+}
+
+#contact .info-item i {
+  font-size: 20px;
+  color: var(--primary-color);
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #e7f5ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+#contact .info-item h3 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: var(--heading-color);
+}
+
+#contact .info-item p {
+  padding: 0 0 0 60px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: var(--default-color);
+}
+
+#contact .php-email-form {
+  width: 100%;
+  background: var(--surface-color);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.08);
+}
+
+#contact .php-email-form .form-group {
+  padding-bottom: 8px;
+}
+
+#contact .php-email-form input,
+#contact .php-email-form textarea {
+  border-radius: 4px;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+#contact .php-email-form input:focus,
+#contact .php-email-form textarea:focus {
+  border-color: var(--primary-color);
+}
+
+#contact .php-email-form input {
+  height: 44px;
+}
+
+#contact .php-email-form textarea {
+  padding: 10px 12px;
+}
+
+#contact .php-email-form button[type="submit"] {
+  background: var(--primary-color);
+  border: 0;
+  padding: 10px 30px;
+  color: var(--light-color);
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+#contact .php-email-form button[type="submit"]:hover {
+  background: var(--accent-color);
+}
+
+/* ************ Footer ************ */
+footer {
+  background: var(--contrast-color) !important;
+  color: rgba(255, 255, 255, 0.8);
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+
+footer:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--primary-color), var(--info-color));
+}
+
+footer h5 {
+  color: white;
+  margin-bottom: 25px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+footer h5:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 2px;
+  background: var(--primary-color);
+  bottom: 0;
+  left: 0;
+}
+
+footer a {
+  color: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s;
+}
+
+footer a:hover {
+  color: white;
+  text-decoration: none;
+  padding-left: 5px;
+}
+
+footer ul li {
+  margin-bottom: 12px;
+}
+
+.footer-contact-info li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.footer-contact-info i {
+  margin-right: 10px;
+  color: var(--primary-color);
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  margin-right: 10px;
+  color: white;
+  transition: all 0.3s;
+}
+
+.social-links a:hover {
+  background: var(--primary-color);
+  transform: translateY(-3px);
+}
+
+.copyright {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 20px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* ************ Scroll to Top Button ************ */
+.scroll-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: var(--primary-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.scroll-top i {
+  font-size: 24px;
+  color: var(--light-color);
+  line-height: 0;
+}
+
+.scroll-top:hover {
+  background: var(--accent-color);
+  color: var(--light-color);
+}
+
+.scroll-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* ************ Preloader ************ */
+#preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: var(--light-color);
+  transition: all 0.6s ease-out;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#preloader::before {
+  content: "";
+  position: relative;
+  width: 90px;
+  height: 90px;
+  border: 4px solid var(--primary-color);
+  border-radius: 50%;
+  border-top-color: var(--light-color);
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

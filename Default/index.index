@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEXPOTECH - Your Trusted Partner in IT Procurement and Services</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <!-- Glightbox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.1/css/glightbox.css" />
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="https://assets.aktools.net/image-stocks/logos/favicon/favicon.png" sizes="96x96" />
+</head>
+<body class="d-flex flex-column min-vh-100" data-bs-spy="scroll" data-bs-target="#navbar">
+    <!-- Top Bar with Social Links -->
+    <div id="topbar" class="top-bar fixed-top d-flex align-items-center">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="contact-info d-flex align-items-center">
+                <i class="bi bi-envelope"></i> <a href="mailto:info@akthemes.com">info@akthemes.com</a>
+                <i class="bi bi-phone ms-3"></i> +44 20 1234 5678
+            </div>
+            <div class="social-links d-flex align-items-center">
+                <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="youtube"><i class="bi bi-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://placehold.co/200x50/0d6efd/ffffff?text=AK+THEMES" alt="AK THEMES Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="blogDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Blog
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="blogDropdown">
+                            <li><a class="dropdown-item" href="blogs.html">Latest Posts</a></li>
+                            <li><a class="dropdown-item" href="blog-categories.html">Categories</a></li>
+                            <li><a class="dropdown-item" href="blog-single.html">Single Post</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-2">
+                        <a class="btn btn-primary btn-sm rounded-pill px-3 mt-1" href="#">
+                            Get Started <i class="bi bi-arrow-right ms-1"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main">
+        <!--Hero Section-->
+        <section id="hero" class="section">
+            <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+                <div class="row justify-content-center">
+                    <div class="col-xl-8">
+                        <h1 class="animate__animated animate__fadeInDown">Your Trusted Partner in IT Procurement and Services</h1>
+                        <p class="animate__animated animate__fadeInUp">Empowering businesses through technology with reliable solutions and expert support.</p>
+                        <div class="d-flex justify-content-center animate__animated animate__zoomIn">
+                            <a href="#contact" class="btn btn-primary">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Hero Section-->
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container" data-aos="fade-up">
+            <div class="row align-items-center gy-5">
+        
+                <div class="col-lg-6">
+                <img src="https://assets.aktools.net/image-stocks/about/about-1.jpg" class="img-fluid rounded shadow" alt="About AK THEMES">
+                </div>
+        
+                <div class="col-lg-6">
+                <h3 class="text-uppercase fw-bold text-primary">Who We Are</h3>
+                <h2 class="mb-4" style="color: var(--dark-color);">Driving Innovation in IT Services</h2>
+                <p style="color: var(--secondary-color);">
+                    At <strong>AK THEMES</strong>, we specialize in delivering cutting-edge IT procurement, cloud integration, and cybersecurity solutions that help businesses grow smarter. Since 2010, we've worked with organizations of all sizes to align their technology goals with real business results.
+                </p>
+                <ul class="list-unstyled mt-4">
+                    <li class="mb-3"><i class="bi bi-check-circle-fill text-success me-2"></i> Trusted by top industry players in the UK</li>
+                    <li class="mb-3"><i class="bi bi-check-circle-fill text-success me-2"></i> Over 100+ successful IT projects delivered</li>
+                    <li class="mb-3"><i class="bi bi-check-circle-fill text-success me-2"></i> 24/7 customer support with dedicated consultants</li>
+                </ul>
+                <a href="#services" class="btn btn-primary mt-3">Explore Our Services <i class="bi bi-arrow-right ms-2"></i></a>
+                </div>
+        
+            </div>
+            </div>
+        </section>
+
+
+    <!-- What We Do Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="fw-bold mb-3">What We Do</h2>
+                    <p class="lead">We provide end-to-end IT solutions tailored to your business needs, helping you leverage technology for growth and efficiency.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="fw-bold mb-3">Our Services</h2>
+                    <p class="lead">Comprehensive IT solutions designed to meet your business requirements</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-box bg-primary bg-opacity-10 text-primary mb-4">
+                                <i class="bi bi-laptop fs-2"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">IT Hardware & Software Procurement</h4>
+                            <p class="mb-0">We source and supply high-quality IT hardware and software from trusted vendors at competitive prices.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-box bg-primary bg-opacity-10 text-primary mb-4">
+                                <i class="bi bi-cloud fs-2"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Cloud Solutions</h4>
+                            <p class="mb-0">Migrate to the cloud with our comprehensive cloud services including setup, migration, and management.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-box bg-primary bg-opacity-10 text-primary mb-4">
+                                <i class="bi bi-lightbulb fs-2"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">IT Consulting & Strategy</h4>
+                            <p class="mb-0">Our experts help you develop an IT strategy aligned with your business goals for maximum impact.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-box bg-primary bg-opacity-10 text-primary mb-4">
+                                <i class="bi bi-headset fs-2"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Managed IT Support</h4>
+                            <p class="mb-0">Proactive IT support and maintenance to keep your systems running smoothly 24/7.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-box bg-primary bg-opacity-10 text-primary mb-4">
+                                <i class="bi bi-shield-lock fs-2"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Cybersecurity Services</h4>
+                            <p class="mb-0">Protect your business from threats with our comprehensive security solutions and monitoring.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-box bg-primary bg-opacity-10 text-primary mb-4">
+                                <i class="bi bi-diagram-3 fs-2"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Networking and Infrastructure</h4>
+                            <p class="mb-0">Design, implementation, and optimization of robust network infrastructure for your business.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsors Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center mb-4">
+                <div class="col-lg-8 text-center">
+                    <h2 class="fw-bold mb-3">Trusted By Industry Leaders</h2>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-center g-4">
+                <div class="col-6 col-sm-4 col-md-2">
+                    <img src="https://assets.aktools.net/image-stocks/clients/clients-1.png" alt="Partner Logo" class="img-fluid grayscale">
+                </div>
+                <div class="col-6 col-sm-4 col-md-2">
+                    <img src="https://assets.aktools.net/image-stocks/clients/clients-2.png" alt="Partner Logo" class="img-fluid grayscale">
+                </div>
+                <div class="col-6 col-sm-4 col-md-2">
+                    <img src="https://assets.aktools.net/image-stocks/clients/clients-3.png" alt="Partner Logo" class="img-fluid grayscale">
+                </div>
+                <div class="col-6 col-sm-4 col-md-2">
+                    <img src="https://assets.aktools.net/image-stocks/clients/clients-4.png" alt="Partner Logo" class="img-fluid grayscale">
+                </div>
+                <div class="col-6 col-sm-4 col-md-2">
+                    <img src="https://assets.aktools.net/image-stocks/clients/clients-5.png" alt="Partner Logo" class="img-fluid grayscale">
+                </div>
+                <div class="col-6 col-sm-4 col-md-2">
+                    <img src="https://assets.aktools.net/image-stocks/clients/clients-6.png" alt="Partner Logo" class="img-fluid grayscale">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="stats-item text-center w-100 h-100">
+                        <span class="stat-number counter" data-target="232">0</span>
+                        <p>Happy Clients</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="stats-item text-center w-100 h-100">
+                        <span class="stat-number counter" data-target="531">0</span>
+                        <span class="plus-sign">+</span>
+                        <p>Projects</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="stats-item text-center w-100 h-100">
+                        <span class="stat-number counter" data-target="1453">0</span>
+                        <span class="plus-sign">+</span>
+                        <p>Hours Of Support</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="stats-item text-center w-100 h-100">
+                        <span class="stat-number counter" data-target="32">0</span>
+                        <p>Team Members</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-5">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4">
+                    <div class="content px-xl-5">
+                        <h3><span>Frequently Asked </span><strong>Questions</strong></h3>
+                        <p>
+                            Find answers to common questions about our services and solutions. We're here to help you understand how we can meet your IT needs.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-8">
+                    <div class="faq-container">
+                        <div class="faq-item faq-active">
+                            <h3><span class="num">1.</span> <span>What industries do you specialize in?</span></h3>
+                            <div class="faq-content">
+                                <p>We serve clients across various industries including finance, healthcare, education, manufacturing, and retail. Our solutions are tailored to meet the specific needs and compliance requirements of each sector.</p>
+                            </div>
+                            <i class="faq-toggle bi bi-chevron-right"></i>
+                        </div>
+
+                        <div class="faq-item">
+                            <h3><span class="num">2.</span> <span>How do you ensure the security of our data?</span></h3>
+                            <div class="faq-content">
+                                <p>We implement industry-standard security protocols including encryption, multi-factor authentication, regular security audits, and employee training. Our cybersecurity services provide additional layers of protection tailored to your specific needs.</p>
+                            </div>
+                            <i class="faq-toggle bi bi-chevron-right"></i>
+                        </div>
+
+                        <div class="faq-item">
+                            <h3><span class="num">3.</span> <span>What is your typical project timeline?</span></h3>
+                            <div class="faq-content">
+                                <p>Project timelines vary based on scope and complexity. Simple implementations may take 2-4 weeks, while comprehensive solutions can span several months. We provide detailed project plans with milestones during our initial consultation.</p>
+                            </div>
+                            <i class="faq-toggle bi bi-chevron-right"></i>
+                        </div>
+
+                        <div class="faq-item">
+                            <h3><span class="num">4.</span> <span>Do you offer ongoing support after implementation?</span></h3>
+                            <div class="faq-content">
+                                <p>Yes, we offer various support packages ranging from basic maintenance to fully managed services. Our support team is available 24/7 to ensure your systems remain operational and optimized.</p>
+                            </div>
+                            <i class="faq-toggle bi bi-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="cta-section position-relative py-5">
+        <div class="cta-overlay"></div>
+        <div class="container position-relative z-1">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <h2 class="fw-bold mb-4 text-white">Ready to Transform Your IT Infrastructure?</h2>
+                    <p class="lead mb-4 text-white-75">Let's discuss how we can help your business achieve its technology goals.</p>
+                    <button class="btn btn-primary btn-lg px-4 py-3 fw-bold">Get Started Today <i class="bi bi-arrow-right ms-2"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="fw-bold mb-3">What Our Clients Say</h2>
+                    <p class="lead">Trusted by businesses of all sizes across industries</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="d-flex mb-3">
+                                <img src="https://assets.aktools.net/image-stocks/testimonials/testimonial-1.jpg" alt="Client" class="rounded-circle me-3" width="60" height="60">
+                                <div>
+                                    <h5 class="fw-bold mb-1">Sarah Johnson</h5>
+                                    <p class="text-muted small mb-0">CTO, TechForward Inc.</p>
+                                </div>
+                            </div>
+                            <p class="mb-0">"GEXPOTECH transformed our IT infrastructure with their cloud solutions. Their team was professional, knowledgeable, and delivered ahead of schedule." </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="d-flex mb-3">
+                                <img src="https://assets.aktools.net/image-stocks/testimonials/testimonial-2.jpg" alt="Client" class="rounded-circle me-3" width="60" height="60">
+                                <div>
+                                    <h5 class="fw-bold mb-1">Michael Chen</h5>
+                                    <p class="text-muted small mb-0">Director, Global Retail Corp</p>
+                                </div>
+                            </div>
+                            <p class="mb-0">"Their procurement service saved us 25% on our annual IT hardware budget while improving quality. Exceptional vendor relationships and negotiation skills."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="d-flex mb-3">
+                                <img src="https://assets.aktools.net/image-stocks/testimonials/testimonial-3.jpg" alt="Client" class="rounded-circle me-3" width="60" height="60">
+                                <div>
+                                    <h5 class="fw-bold mb-1">David Wilson</h5>
+                                    <p class="text-muted small mb-0">CEO, HealthCare Solutions</p>
+                                </div>
+                            </div>
+                            <p class="mb-0">"The cybersecurity audit and implementation gave us peace of mind. GEXPOTECH's team understood our compliance requirements perfectly."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="fw-bold mb-3">Our Portfolio</h2>
+                    <p class="lead">Explore our recent projects and success stories</p>
+                </div>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="row justify-content-center mb-4">
+                <div class="col-lg-8 text-center">
+                    <button class="btn btn-outline-primary filter-btn mb-1 active" data-filter="*">All</button>
+                    <button class="btn btn-outline-primary filter-btn mb-1" data-filter=".cloud">Cloud Solutions</button>
+                    <button class="btn btn-outline-primary filter-btn mb-1" data-filter=".network">Network Infrastructure</button>
+                    <button class="btn btn-outline-primary filter-btn mb-1" data-filter=".security">Security</button>
+                    <button class="btn btn-outline-primary filter-btn mb-1" data-filter=".procurement">IT Procurement</button>
+                    <button class="btn btn-outline-primary filter-btn mb-1" data-filter=".managed">Managed Services</button>
+                    <button class="btn btn-outline-primary filter-btn mb-1" data-filter=".strategy">IT Strategy</button>
+                </div>
+            </div>
+
+            <!-- Portfolio Items -->
+            <div class="row g-4 portfolio-container">
+                <div class="col-md-6 col-lg-4 portfolio-item cloud">
+                    <div class="card border-0 shadow-sm overflow-hidden h-100">
+                        <a href="https://assets.aktools.net/image-stocks/portfolios/portfolio-1.jpg" class="glightbox" data-gallery="portfolioGallery">
+                            <img src="https://assets.aktools.net/image-stocks/portfolios/portfolio-1.jpg" class="card-img-top" alt="Cloud Migration Project">
+                        </a>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="fw-bold mb-2">Enterprise Cloud Migration</h5>
+                            <p class="text-muted small flex-grow-1">Seamless transition to hybrid cloud for a financial services firm</p>
+                            <a href="portfolio-details.html" class="btn btn-sm btn-outline-primary mt-2">View Case Study</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 portfolio-item network">
+                    <div class="card border-0 shadow-sm overflow-hidden h-100">
+                        <a href="https://assets.aktools.net/image-stocks/portfolios/portfolio-2.jpg" class="glightbox" data-gallery="portfolioGallery">
+                            <img src="https://assets.aktools.net/image-stocks/portfolios/portfolio-2.jpg" class="card-img-top" alt="Network Upgrade Project">
+                        </a>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="fw-bold mb-2">Global Network Infrastructure</h5>
+                            <p class="text-muted small flex-grow-1">Multi-site network upgrade for manufacturing client</p>
+                            <a href="portfolio-details.html" class="btn btn-sm btn-outline-primary mt-2">View Case Study</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 portfolio-item security">
+                    <div class="card border-0 shadow-sm overflow-hidden h-100">
+                        <a href="https://assets.aktools.net/image-stocks/portfolios/portfolio-3.jpg" class="glightbox" data-gallery="portfolioGallery">
+                            <img src="https://assets.aktools.net/image-stocks/portfolios/portfolio-3.jpg" class="card-img-top" alt="Security Implementation">
+                        </a>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="fw-bold mb-2">Healthcare Security Implementation</h5>
+                            <p class="text-muted small flex-grow-1">HIPAA-compliant security solution for hospital network</p>
+                            <a href="portfolio-details.html" class="btn btn-sm btn-outline-primary mt-2">View Case Study</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 portfolio-item procurement">
+                    <div class="card border-0 shadow-sm overflow-hidden h-100">
+                        <a href="https://assets.aktools.net/image-stocks/portfolios/portfolio-4.jpg" class="glightbox" data-gallery="portfolioGallery">
+                            <img src="https://assets.aktools.net/image-stocks/portfolios/portfolio-4.jpg" class="card-img-top" alt="IT Procurement Project">
+                        </a>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="fw-bold mb-2">Enterprise IT Procurement</h5>
+                            <p class="text-muted small flex-grow-1">Large-scale hardware refresh for education client</p>
+                            <a href="portfolio-details.html" class="btn btn-sm btn-outline-primary mt-2">View Case Study</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 portfolio-item managed">
+                    <div class="card border-0 shadow-sm overflow-hidden h-100">
+                        <a href="https://assets.aktools.net/image-stocks/portfolios/portfolio-5.jpg" class="glightbox" data-gallery="portfolioGallery">
+                            <img src="https://assets.aktools.net/image-stocks/portfolios/portfolio-5.jpg" class="card-img-top" alt="Managed Services">
+                        </a>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="fw-bold mb-2">24/7 Managed Services</h5>
+                            <p class="text-muted small flex-grow-1">Ongoing support for e-commerce platform</p>
+                            <a href="portfolio-details.html" class="btn btn-sm btn-outline-primary mt-2">View Case Study</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 portfolio-item strategy">
+                    <div class="card border-0 shadow-sm overflow-hidden h-100">
+                        <a href="https://assets.aktools.net/image-stocks/portfolios/portfolio-6.jpg" class="glightbox" data-gallery="portfolioGallery">
+                            <img src="https://assets.aktools.net/image-stocks/portfolios/portfolio-6.jpg" class="card-img-top" alt="IT Strategy Project">
+                        </a>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="fw-bold mb-2">Digital Transformation Strategy</h5>
+                            <p class="text-muted small flex-grow-1">3-year IT roadmap for retail chain expansion</p>
+                            <a href="portfolio-details.html" class="btn btn-sm btn-outline-primary mt-2">View Case Study</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="portfolios.html" class="btn btn-primary">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="section team mb-2">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Expert Team</h2>
+                <p>Meet the talented professionals who make our success possible with their dedication and expertise.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="member-card">
+                        <div class="member-img">
+                            <img src="https://assets.aktools.net/image-stocks/teams/team-1.jpg" alt="Alex Morgan">
+                        </div>
+                        <div class="member-info">
+                            <h4>Alex Morgan</h4>
+                            <span>CEO & Founder</span>
+                            <p>"Technology is best when it brings people together."</p>
+                            <div class="social-links">
+                                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                                <a href="#"><i class="bi bi-facebook"></i></a>
+                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="member-card">
+                        <div class="member-img">
+                            <img src="https://assets.aktools.net/image-stocks/teams/team-2.jpg" alt="Sarah Williams">
+                        </div>
+                        <div class="member-info">
+                            <h4>Sarah Williams</h4>
+                            <span>CTO</span>
+                            <p>"Innovation distinguishes between a leader and a follower."</p>
+                            <div class="social-links">
+                                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                                <a href="#"><i class="bi bi-github"></i></a>
+                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="member-card">
+                        <div class="member-img">
+                            <img src="https://assets.aktools.net/image-stocks/teams/team-3.jpg" alt="David Chen">
+                        </div>
+                        <div class="member-info">
+                            <h4>David Chen</h4>
+                            <span>Lead Developer</span>
+                            <p>"Code is like humor. When you have to explain it, it's bad."</p>
+                            <div class="social-links">
+                                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                                <a href="#"><i class="bi bi-stack-overflow"></i></a>
+                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="member-card">
+                        <div class="member-img">
+                            <img src="https://assets.aktools.net/image-stocks/teams/team-4.jpg" alt="Emma Johnson">
+                        </div>
+                        <div class="member-info">
+                            <h4>Emma Johnson</h4>
+                            <span>Marketing Director</span>
+                            <p>"Your brand is what other people say about you."</p>
+                            <div class="social-links">
+                                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                                <a href="#"><i class="bi bi-instagram"></i></a>
+                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing section light-background mt-5">
+        <div class="container section-title text-center mb-5">
+            <h2 class="fw-bold">Our Pricing</h2>
+            <p class="lead">Flexible pricing options to suit your business needs</p>
+        </div>
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="pricing-item">
+                        <h3>Free Plan</h3>
+                        <h4><sup>$</sup>0<span> / month</span></h4>
+                        <ul>
+                            <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
+                            <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
+                            <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
+                            <li class="na"><i class="bi bi-x"></i> <span>Pharetra massa massa ultricies</span></li>
+                            <li class="na"><i class="bi bi-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+                        </ul>
+                        <a href="#" class="buy-btn">Buy Now</a>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="pricing-item featured">
+                        <h3>Business Plan</h3>
+                        <h4><sup>$</sup>29<span> / month</span></h4>
+                        <ul>
+                            <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
+                            <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
+                            <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
+                            <li><i class="bi bi-check"></i> <span>Pharetra massa massa ultricies</span></li>
+                            <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+                        </ul>
+                        <a href="#" class="buy-btn">Buy Now</a>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="pricing-item">
+                        <h3>Developer Plan</h3>
+                        <h4><sup>$</sup>49<span> / month</span></h4>
+                        <ul>
+                            <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
+                            <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
+                            <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
+                            <li><i class="bi bi-check"></i> <span>Pharetra massa massa ultricies</span></li>
+                            <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+                        </ul>
+                        <a href="#" class="buy-btn">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Stay updated with the latest IT trends, insights, and special offers.</p>
+        <form>
+            <input type="email" class="form-control" placeholder="Enter your email address">
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="recent-posts" class="recent-posts section mt-5">
+        <div class="container section-title">
+           <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="fw-bold mb-3">Recent Posts</h2>
+                    <p class="lead">Stay updated with our latest insights and news</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+           <div class="row gy-4">
+              <div class="col-xl-4 col-md-6">
+                 <article>
+                    <div class="post-img">
+                       <img src="https://assets.aktools.net/image-stocks/blogs/blog-1.jpg" alt="Blog Post Image" class="img-fluid">
+                    </div>
+                    <p class="post-category">Technology</p>
+                    <h2 class="title">
+                       <a href="blog-details.html">Leveraging Cloud Solutions for Business Growth</a>
+                    </h2>
+                    <div class="d-flex align-items-center">
+                       <img src="https://assets.aktools.net/image-stocks/blogs/blog-author-1.jpg" alt="Author Image" class="img-fluid post-author-img flex-shrink-0">
+                       <div class="post-meta">
+                          <p class="post-author">John Doe</p>
+                          <p class="post-date">
+                             <time datetime="2024-01-15">Jan 15, 2024</time>
+                          </p>
+                       </div>
+                    </div>
+                 </article>
+              </div>
+              <div class="col-xl-4 col-md-6">
+                 <article>
+                    <div class="post-img">
+                       <img src="https://assets.aktools.net/image-stocks/blogs/blog-2.jpg" alt="Blog Post Image" class="img-fluid">
+                    </div>
+                    <p class="post-category">Cybersecurity</p>
+                    <h2 class="title">
+                       <a href="blog-details.html">Essential Cybersecurity Tips for Small Businesses</a>
+                    </h2>
+                    <div class="d-flex align-items-center">
+                       <img src="https://assets.aktools.net/image-stocks/blogs/blog-author-2.jpg" alt="Author Image" class="img-fluid post-author-img flex-shrink-0">
+                       <div class="post-meta">
+                          <p class="post-author">Jane Smith</p>
+                          <p class="post-date">
+                             <time datetime="2024-02-20">Feb 20, 2024</time>
+                          </p>
+                       </div>
+                    </div>
+                 </article>
+              </div>
+              <div class="col-xl-4 col-md-6">
+                 <article>
+                    <div class="post-img">
+                       <img src="https://assets.aktools.net/image-stocks/blogs/blog-3.jpg" alt="Blog Post Image" class="img-fluid">
+                    </div>
+                    <p class="post-category">IT Procurement</p>
+                    <h2 class="title">
+                       <a href="blog-details.html">Optimizing Your IT Procurement Strategy</a>
+                    </h2>
+                    <div class="d-flex align-items-center">
+                       <img src="https://assets.aktools.net/image-stocks/blogs/blog-author-3.jpg" alt="Author Image" class="img-fluid post-author-img flex-shrink-0">
+                       <div class="post-meta">
+                          <p class="post-author">Peter Jones</p>
+                          <p class="post-date">
+                             <time datetime="2024-03-10">Mar 10, 2024</time>
+                          </p>
+                       </div>
+                    </div>
+                 </article>
+              </div>
+           </div>
+        </div>
+     </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section mb-4 mt-5">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="fw-bold mb-3">Contact Us</h2>
+                    <p class="lead">We're here to assist you. Reach out for inquiries or collaborations.</p>
+                </div>
+            </div>
+        </div>
+        <!-- End Section Title -->
+    
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+    
+        <!-- Google Maps -->
+        <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
+            <iframe style="border:0; width: 100%; height: 350px;" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.796595225128!2d-0.446276!3d51.470159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876722b2c4e1f8b%3A0x7a5f5b8b9b4b9b4b!2sWatford!5e0!3m2!1sen!2suk!4v1698765432109!5m2!1sen!2suk" 
+                    frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div><!-- End Google Maps -->
+    
+        <div class="row gy-5">
+    
+            <!-- Contact Information -->
+            <div class="col-lg-4">
+            <div class="info-box d-flex align-items-center mb-4" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-geo-alt flex-shrink-0 me-4"></i>
+                <div>
+                <h4>Our Location</h4>
+                <p>123 Tech Park, Watford, UK</p>
+                </div>
+            </div>
+            <div class="info-box d-flex align-items-center mb-4" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-telephone flex-shrink-0 me-4"></i>
+                <div>
+                <h4>Call Us</h4>
+                <p>+44 20 1234 5678</p>
+                </div>
+            </div>
+            <div class="info-box d-flex align-items-center" data-aos="fade-up" data-aos-delay="500">
+                <i class="bi bi-envelope flex-shrink-0 me-4"></i>
+                <div>
+                <h4>Email Us</h4>
+                <p>info@AKTHEMES.com</p>
+                </div>
+            </div>
+            </div>
+    
+            <!-- Contact Form -->
+            <div class="col-lg-8">
+            <form action="#" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+                <div class="row gy-4">
+                <div class="col-md-6">
+                    <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6">
+                    <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="col-md-12">
+                    <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                </div>
+                <div class="col-md-12">
+                    <textarea class="form-control" name="message" rows="4" placeholder="Message" required></textarea>
+                </div>
+                <div class="col-md-12 text-center">
+                    <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                </div>
+                </div>
+            </form>
+            </div>
+            <!-- End Contact Form -->
+    
+        </div>
+    
+        </div>
+    
+    </section>
+    <!-- /Contact Section -->
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-auto">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-about">
+                        <a class="d-flex align-items-center mb-4">
+                            <img src="https://placehold.co/250x60/0d6efd/ffffff?text=AK+THEMES" alt="AK THEMES Logo">
+                        </a>
+                        <p class="mb-4">Your trusted partner for comprehensive IT solutions and services. Empowering businesses through technology since 2010.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                            <a href="#"><i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h5>Our Services</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">IT Procurement</a></li>
+                        <li><a href="#">Cloud Solutions</a></li>
+                        <li><a href="#">IT Consulting</a></li>
+                        <li><a href="#">Managed Services</a></li>
+                        <li><a href="#">Cybersecurity</a></li>
+                        <li><a href="#">Networking</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <h5>Contact Info</h5>
+                    <ul class="footer-contact-info list-unstyled">
+                        <li>
+                            <i class="bi bi-geo-alt"></i>
+                            <div>
+                                <strong>Address:</strong>
+                                123 Tech Park, Watford, UK
+                            </div>
+                        </li>
+                        <li>
+                            <i class="bi bi-envelope"></i>
+                            <div>
+                                <strong>Email:</strong>
+                                info@akthemes.com
+                            </div>
+                        </li>
+                        <li>
+                            <i class="bi bi-phone"></i>
+                            <div>
+                                <strong>Phone:</strong>
+                                +44 20 1234 5678
+                            </div>
+                        </li>
+                        <li>
+                            <i class="bi bi-clock"></i>
+                            <div>
+                                <strong>Hours:</strong>
+                                Mon-Fri: 9AM - 6PM
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="mb-0">&copy; 2023 <strong>AK THEMES</strong>. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <p class="mb-0">
+                            <a href="#" class="me-3">Privacy Policy</a>
+                            <a href="#">Terms of Service</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="btn btn-primary rounded-circle shadow scroll-to-top d-flex align-items-center justify-content-center">
+        <i class="bi bi-arrow-up fs-5"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper.js JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Glightbox.js JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.1/js/glightbox.min.js"></script>
+    <!-- CountUp JS -->
+    <script src="https://cdn.jsdelivr.net/npm/countup.js@2.8.0/dist/countUp.min.js"></script>
+    <!--ImagesLoaded CDN-->
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <!--SweetAlert2 CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--Isotope JS-->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

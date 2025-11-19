@@ -1,0 +1,430 @@
+/* ************ CSS Variables ************ */
+:root {
+  --default-color: #dce3e9;
+  --heading-color: #ffffff;
+  --accent-color: #00bcd4;
+  --surface-color: #112330;
+  --contrast-color: #ffffff;
+  --background-color: #08121a;
+  --primary-color: #00bcd4;
+  --secondary-color: #008ba3;
+  --success-color: #4caf50;
+  --font-heading: "Montserrat", sans-serif;
+  --font-body: "Poppins", sans-serif;
+}
+
+/* ************ General Styles ************ */
+body {
+  font-family: var(--font-body);
+  color: var(--default-color);
+  background-color: var(--background-color);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  color: var(--heading-color);
+  font-weight: 700;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: var(--heading-color);
+}
+
+.section-title {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+}
+
+.section-title:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background-color: var(--accent-color);
+}
+
+.section-title.text-center:after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* ************ Buttons ************ */
+.btn-primary {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  padding: 0.8rem 2rem;
+  font-weight: 600;
+  border-radius: 50px;
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 188, 212, 0.3);
+}
+
+.btn-outline-primary {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+  padding: 0.8rem 2rem;
+  font-weight: 600;
+  border-radius: 50px;
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--accent-color);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 188, 212, 0.3);
+}
+
+/* ************ Video Background ************ */
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.video-background video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(8, 18, 26, 0.85);
+}
+
+/* ************ Hero Section ************ */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.logo {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--heading-color);
+  display: inline-block;
+}
+
+.logo span {
+  color: var(--accent-color);
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2.5rem 0;
+}
+
+.countdown-item {
+  background: var(--surface-color);
+  border-radius: 10px;
+  padding: 1.5rem;
+  min-width: 100px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.countdown-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.countdown-label {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ************ Notify Section ************ */
+.notify-section {
+  padding: 5rem 0;
+  background-color: var(--surface-color);
+}
+
+.notify-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.notify-form .form-text {
+  color: var(--primary-color);
+}
+
+.notify-form input::placeholder {
+  color: #9eb3c3;
+}
+
+.form-control {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--default-color);
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+}
+
+.form-control:focus {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: var(--accent-color);
+  color: var(--default-color);
+  box-shadow: 0 0 0 0.25rem rgba(0, 188, 212, 0.25);
+}
+
+/* ************ About Section ************ */
+.about-section {
+  padding: 5rem 0;
+  background-color: var(--background-color);
+}
+
+.feature-item {
+  text-align: center;
+  padding: 2rem;
+  background: var(--surface-color);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.feature-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  color: var(--accent-color);
+  margin-bottom: 1.5rem;
+}
+
+/* ************ Social Section ************ */
+.social-section {
+  padding: 3rem 0;
+  background-color: var(--surface-color);
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--background-color);
+  color: var(--default-color);
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background: var(--accent-color);
+  color: white;
+  transform: translateY(-5px);
+}
+
+/* ************ Footer ************ */
+footer {
+  background-color: var(--background-color);
+  color: var(--default-color);
+  padding: 2rem 0;
+  text-align: center;
+}
+
+/* ************ Back to Top Button ************ */
+.scroll-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--accent-color);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-top.active {
+  opacity: 1;
+  visibility: visible;
+  bottom: 30px;
+}
+
+.scroll-top:hover {
+  background: var(--secondary-color);
+  transform: translateY(-3px);
+}
+
+/* ************ Preloader ************ */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  border-top-color: var(--accent-color);
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ************ Animations ************ */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+/* ************ Responsive Adjustments ************ */
+@media (max-width: 992px) {
+  .hero h1 {
+    font-size: 2.8rem;
+  }
+
+  .countdown {
+    gap: 1rem;
+  }
+
+  .countdown-item {
+    min-width: 80px;
+    padding: 1rem;
+  }
+
+  .countdown-number {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .countdown {
+    flex-wrap: wrap;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .video-background {
+    display: none;
+  }
+
+  .hero {
+    background: linear-gradient(rgba(8, 18, 26, 0.9), rgba(8, 18, 26, 0.9)),
+      url("https://assets.aktools.net/image-stocks/contractor/real-estate-4.jpg  ")
+        no-repeat center center;
+    background-size: cover;
+  }
+}
